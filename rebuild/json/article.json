@@ -3,8 +3,8 @@
         "title": "机器人使用教程---夏树bot",
         "id": 4898,
         "time": 1649189663168,
-        "modifyTime": 1649189663168,
-        "len": 690,
+        "modifyTime": 1649192129111,
+        "len": 1726,
         "encrypt": false,
         "menu": [
             {
@@ -24,8 +24,13 @@
             },
             {
                 "size": "big",
-                "text": "使用",
-                "url": "#id-%E4%BD%BF%E7%94%A8"
+                "text": "服务器管理操作类",
+                "url": "#id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E7%B1%BB"
+            },
+            {
+                "size": "big",
+                "text": "机器人类功能",
+                "url": "#id-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%B1%BB%E5%8A%9F%E8%83%BD"
             }
         ],
         "tags": [

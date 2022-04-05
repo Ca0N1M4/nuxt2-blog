@@ -5,7 +5,8 @@
 <h3><sup class="fake-head" id="id-%E5%8A%9F%E8%83%BD%2F%E8%8F%9C%E5%8D%95"></sup><a class="header-link" href="#id-%E5%8A%9F%E8%83%BD%2F%E8%8F%9C%E5%8D%95"><p>功能 / 菜单</p></a></h3>
 <p>输入 #菜单并发送你会收到机器人的三个功能显示</p>
 <blockquote>
-  <p>  # 服务器查询类  # 服务器管理操作类
+  <p>  # 服务器查询
+    # 服务器管理操作类
     # 机器人类操作</p>
 </blockquote>
 <h3><sup class="fake-head" id="id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9F%A5%E8%AF%A2%E7%B1%BB"></sup><a class="header-link" href="#id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9F%A5%E8%AF%A2%E7%B1%BB"><p>服务器查询类</p></a></h3>
@@ -20,5 +21,32 @@
 <li><p><code>#查询ban列表</code> <span style="color: red">需要管理员权限</span> 可以获取服务器的被 ban 玩家列表</p></li>
 <li><p><code>#查询vip列表</code><span style="color: red">需要管理员权限</span> 可以获取服务器的 vip 玩家列表</p></li>
 </ul>
-<h3><sup class="fake-head" id="id-%E4%BD%BF%E7%94%A8"></sup><a class="header-link" href="#id-%E4%BD%BF%E7%94%A8"><p>使用</p></a></h3>
-<p>还没写</p>
+<h3><sup class="fake-head" id="id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E7%B1%BB"></sup><a class="header-link" href="#id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E7%B1%BB"><p>服务器管理操作类</p></a></h3>
+<ul>
+<li><code>#report</code> 使用方法 #report 玩家 id。玩家可以对服务器内某玩家超过生涯 kd 等服务器规定进行举报
+  <span style="color: red">以下操作都需要管理员权限！！！</span></li>
+<li><code>#添加Vip</code> (添加某人 VIP 天数为 0 则永久，使用方法:# 添加 Vip 玩家 id 天数)</li>
+<li><code>#删除vip</code> (使用方法:# 删除 Vip 玩家 id)</li>
+<li><code>#换边</code>使用方法：# 换边 team1 玩家 id 将玩家换到另一边 ，在使用 #查询 3 的后 60 秒内，可使用 <span style="color: red">#换边 队伍序号 玩家序号</span>进行换边操作</li>
+<li><code>#kick</code> 踢出服务器内玩家，使用方法:#KICK 玩家 id 踢出理由。在使用 #查询 3 后的 60 秒内可以使用 <span style="color: red">#kick 队伍序号 玩家序号 理由</span> 进行踢出操作</li>
+<li><code>#kick2</code> 备用踢出方案，使用方法:#KICK2 玩家 id 踢出理由，暂时没有序号功能</li>
+<li><code>#ban</code>(使用方法:#ban 玩家 id)</li>
+<li><code>#unban</code>(使用方法:#unban 玩家 id)</li>
+<li><code>#切图</code>切换服务器的地图，使用方法 #切图 地图 id</li>
+<li><code>#设置服务器规定</code> (# 设置服务器规定 最高 rank 最高 kd 最高 kpm)</li>
+</ul>
+<h3><sup class="fake-head" id="id-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%B1%BB%E5%8A%9F%E8%83%BD"></sup><a class="header-link" href="#id-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%B1%BB%E5%8A%9F%E8%83%BD"><p>机器人类功能</p></a></h3>
+<p><span style="color: red">以下功能都需要管理员权限！！</span></p>
+<ul>
+<li><p><code>#y</code> 同意入群申请，当多人申请时，会<span style="color: red">全部同意</span>，仅收到入群申请后可用)</p></li>
+<li><p><code>#n</code> 拒绝入群申请，当多人申请时，会<span style="color: red">全部拒绝</span>，仅收到入群申请后可用)</p></li>
+<li><p><code>#删除管理</code>删除某人为<span style="color: red">机器人管理</span>，使用方法 #删除管理 QQ 号</p></li>
+<li><p><code>#添加管理</code>添加某人为<span style="color: red">机器人管理</span>，使用方法 #添加管理 QQ 号</p></li>
+<li><p><code>#修复</code>修复<span style="color: red"> session</span> 问题，当服务器操作类用失败操作时，可使用此命令尝试修复
+<span style="color: red">以下命令需要高级管理权限！！！！！！</span></p></li>
+<li><p><code>#设置rid与sid</code> 使用方法:# 设置 rid 与 sid <span style="color: red">rid</span> <span style="color: red">sid</span> ，<span style="color: red">需高级管理员私发</span></p></li>
+<li><p><code>#启动定时修复</code>使用方法:# 启动定时修复 <span style="color: red">时间</span>，定时自动修复 session，单位小时，到时间机器人会自动私发给设置账号 session</p></li>
+<li><p><code>#启动自动通过申请</code></p></li>
+<li><p><code>#停止自动通过申请</code>
+若启动自动通过申请 则有人申请加群时，若其 id 不存在，机器人将在 120 秒后自动通过</p></li>
+</ul>
