@@ -179,38 +179,5 @@
         "tags": [
             "前端"
         ]
-    },
-    {
-        "title": "批量重命名工具",
-        "id": 9732,
-        "time": 1611155951873,
-        "modifyTime": 1649189457057,
-        "len": 690,
-        "encrypt": false,
-        "menu": [
-            {
-                "size": "big",
-                "text": "闲话",
-                "url": "#id-%E9%97%B2%E8%AF%9D"
-            },
-            {
-                "size": "big",
-                "text": "功能/菜单",
-                "url": "#id-%E5%8A%9F%E8%83%BD%2F%E8%8F%9C%E5%8D%95"
-            },
-            {
-                "size": "big",
-                "text": "服务器查询类",
-                "url": "#id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9F%A5%E8%AF%A2%E7%B1%BB"
-            },
-            {
-                "size": "big",
-                "text": "使用",
-                "url": "#id-%E4%BD%BF%E7%94%A8"
-            }
-        ],
-        "tags": [
-            "python"
-        ]
     }
 ]
