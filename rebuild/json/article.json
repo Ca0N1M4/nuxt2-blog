@@ -3,8 +3,8 @@
         "title": "机器人使用教程---夏树bot",
         "id": 4898,
         "time": 1649189663168,
-        "modifyTime": 1649500128869,
-        "len": 2644,
+        "modifyTime": 1649519857740,
+        "len": 4289,
         "encrypt": false,
         "menu": [
             {
@@ -18,29 +18,44 @@
                 "url": "#id-%E5%8A%9F%E8%83%BD%2F%E8%8F%9C%E5%8D%95"
             },
             {
-                "size": "big",
+                "size": "small",
                 "text": "服务器查询类",
                 "url": "#id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%9F%A5%E8%AF%A2%E7%B1%BB"
             },
             {
-                "size": "big",
+                "size": "small",
                 "text": "服务器管理操作类",
                 "url": "#id-%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AE%A1%E7%90%86%E6%93%8D%E4%BD%9C%E7%B1%BB"
             },
             {
-                "size": "big",
+                "size": "small",
                 "text": "机器人类功能",
                 "url": "#id-%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%B1%BB%E5%8A%9F%E8%83%BD"
             },
             {
-                "size": "big",
+                "size": "small",
                 "text": "关于序号功能",
                 "url": "#id-%E5%85%B3%E4%BA%8E%E5%BA%8F%E5%8F%B7%E5%8A%9F%E8%83%BD"
             },
             {
-                "size": "big",
+                "size": "small",
                 "text": "目前已知bug",
                 "url": "#id-%E7%9B%AE%E5%89%8D%E5%B7%B2%E7%9F%A5bug"
+            },
+            {
+                "size": "big",
+                "text": "部署机器人教程",
+                "url": "#id-%E9%83%A8%E7%BD%B2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%99%E7%A8%8B"
+            },
+            {
+                "size": "small",
+                "text": "基本部署",
+                "url": "#id-%E5%9F%BA%E6%9C%AC%E9%83%A8%E7%BD%B2"
+            },
+            {
+                "size": "small",
+                "text": "插件设置部署",
+                "url": "#id-%E6%8F%92%E4%BB%B6%E8%AE%BE%E7%BD%AE%E9%83%A8%E7%BD%B2"
             }
         ],
         "tags": [
