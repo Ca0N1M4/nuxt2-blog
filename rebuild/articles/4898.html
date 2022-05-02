@@ -30,6 +30,8 @@
 <li><code>#换边</code>使用方法：# 换边 team1 玩家 id 将玩家换到另一边 ，在使用 #查询 3 的后 60 秒内，可使用 <span style="color: red">#换边 队伍序号 玩家序号</span>进行换边操作</li>
 <li><code>#kick</code> 踢出服务器内玩家，使用方法:#KICK 玩家 id 踢出理由。在使用 #查询 3 后的 60 秒内可以使用 <span style="color: red">#kick 队伍序号 玩家序号 理由</span> 进行踢出操作</li>
 <li><code>#kick2</code> 备用踢出方案，使用方法:#KICK2 玩家 id 踢出理由，暂时没有序号功能</li>
+<li><code>#check</code> (使用方法:#check 等级)，这个命令会罗列 大于 等级 的人 ，不包括等于，可以方便管理服务器</li>
+<li><code>#cy</code> (使用方法:#cy 原因) 在使用 #check 后的 30 秒内，管理员可以使用 #cy 快速踢出玩家（超过范围 或着说 check 罗列的玩家）</li>
 <li><code>#ban</code>(使用方法:#ban 玩家 id)</li>
 <li><code>#unban</code>(使用方法:#unban 玩家 id)</li>
 <li><code>#切图</code>切换服务器的地图，使用方法 #切图 地图 id</li>
@@ -66,15 +68,7 @@
 例如: <span style="color: red">#Kick 1 2 踢出原因</span>
 查询玩家数据与换边不需要填写原因</p>
 <h4><sup class="fake-head" id="id-%E7%9B%AE%E5%89%8D%E5%B7%B2%E7%9F%A5bug"></sup><a class="header-link" href="#id-%E7%9B%AE%E5%89%8D%E5%B7%B2%E7%9F%A5bug"><p>目前已知 bug</p></a></h4>
-<p>1. 删除 vip 时会莫名其妙弹出权限不足失败， <span style="color: red">但是只要收到了 “删除成功，就可以视权限不足失败不见”</span>，这个 bug 将在我中考结束或周末有空时修复</p>
-<p><span class="image-container"><img data-viewer="" alt="目前知道的bug1" title="目前知道的bug1" style="width: 70% !important;" src="https://s1.ax1x.com/2022/04/06/qvTlzd.jpg"><small class="desc">目前知道的 bug1</small></span>
-2. 会莫名其妙的弹出一个未授权命令（触发概率极小），这个问题会在我有时间检视代码时候会解决，估摸着是我写重复了
-<span class="image-container"><img data-viewer="" alt="目前知道的bug2" title="目前知道的bug2" style="width: 70% !important;" src="https://s1.ax1x.com/2022/04/06/qxizef.jpg"><small class="desc">目前知道的 bug2</small></span>
-3. 若使用错误的分割符，机器人会没有提示错误，这个问题也将在我检视代码时候修复
-4. 添加 VIP 时输入天数后没有反馈，应该是我改代码时候忘记写回去了
-<span class="image-container"><img data-viewer="" alt="目前知道的bug4" title="目前知道的bug4" style="width: 70% !important;" src="https://s1.ax1x.com/2022/04/08/LCRilj.jpg"><small class="desc">目前知道的 bug4</small></span>
-5. 有时候有人进群，myqq 会报错（#y 或 #n 操作时），对于多线程和数组的修复我会在有时间时修复
-6. 启动定时修复，启动后若重载插件会出现 myqq 报错，对于此问题我会在近期修复</p>
+<p>1. 大部分 bug 已修复，感谢大家的付出，如果遇到 bug 联系 2990852475</p>
 <h3><sup class="fake-head" id="id-%E9%83%A8%E7%BD%B2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%99%E7%A8%8B"></sup><a class="header-link" href="#id-%E9%83%A8%E7%BD%B2%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%99%E7%A8%8B"><p>部署机器人教程</p></a></h3>
 <p>1. 下载 MYQQ</p>
 <h4><sup class="fake-head" id="id-%E5%9F%BA%E6%9C%AC%E9%83%A8%E7%BD%B2"></sup><a class="header-link" href="#id-%E5%9F%BA%E6%9C%AC%E9%83%A8%E7%BD%B2"><p>基本部署</p></a></h4>
@@ -120,3 +114,39 @@
 <li><code>6.设置gameid</code>
 设置完毕后，点击分别确定，即可设置完成，添加管理你可以在 qq 内发送 “# 添加管理” 进行添加，详细看 #机器人类操作</li>
 </ul>
+<h3><sup class="fake-head" id="id-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97"></sup><a class="header-link" href="#id-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97"><p>更新日志</p></a></h3>
+<p>————————————————
+2022.4.04 更新日志
+1. 修改配置写入方式，优化性能
+2. 修改进群申请接受操作类逻辑
+3. 添加 #kick1 支持玩家序号踢出方案，具体使用 #服务器管理操作类 查看
+4. 修改菜单显示
+5. 修改进群类操作时间（延长）
+6. 增加查询玩家数据与换边对序号功能的支持
+6. 修改换边功能，自动检测玩家所在队伍
+7. 修复踢人时乱码显示
+8. 修复进群申请之类的问题
+9. 添加操作失败原因显示
+9. 提高添加 / 删除 ban7ip 的效率
+10. 降低 myqq 插件报错
+11. 修改 kick1 命令变为 kick
+12. 改变命令检测方式为严格模式
+————————————————
+2022.4.09 更新日志
+1. 修复了删除 vip 的部分 bug
+2. 修复了若使用错误的分割符，反馈 bug
+3. 修复了添加 VIP 的部分 bug
+3. 修复了进群时的部分 bug
+4. 修复了定时修复的部分 bug
+5. 修复了一些介绍出错问题
+7. 添加 vip 删除了 “0”，改为 #添加 vip 玩家 id 即为永久添加
+8. 修复了 session 之类的 bug
+9. 修复了 api 为英文的问题
+10. 增加了 #查服务器 功能
+11. 增加进群外挂检测
+12. 修复查询 1/3 无法查询问题
+————————————————
+2022.4.23 更新日志
+1. 修复了有时候弹出授权失败的问题
+2. 修复了命令操作速度过慢的问题
+3. 增加了 #check 功能！可以检测服务器里超过一定 rank 的玩家并且快捷踢出且自定义原因</p>
